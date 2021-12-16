@@ -1,0 +1,35 @@
+// Colours
+$color-primary: #644dff;
+$color-secondary: #465ce8;
+$color-tertiary: #579aff;
+$color-quaternary: #46b1e8;
+$color-quinary: #4df3ff;
+$color-light-gray-1: #f7f7f7;
+$color-light-gray: #dddddd;
+$color-dark-gray: #757575;
+$color-darkest-gray: #333;
+$color-white: #fff;
+$color-black: #000;
+
+// Gradients
+$background-gradient: to right, rgba($color-primary, 0.9),
+  rgba($color-secondary, 0.9), rgba($color-tertiary, 0.9),
+  rgba($color-quaternary, 0.9), rgba($color-quinary, 0.9);
+$text-gradient: to bottom left, $color-primary, $color-secondary,
+  $color-tertiary, $color-quaternary, $color-quinary;
+
+// Font weights
+$font-thin: 100;
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+$font-black: 900;
+
+// Font size
+
+$default-font-size: 1.6rem;
+
+// Grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;

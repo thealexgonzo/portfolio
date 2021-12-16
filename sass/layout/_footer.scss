@@ -1,0 +1,127 @@
+.footer {
+  padding: 7rem 0 15rem 0;
+  font-size: 1.75rem;
+  background-color: $color-darkest-gray;
+
+  &-contact {
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    border-top: 1px solid rgba($color-white, 0.5);
+  }
+
+  .typewriter {
+    position: relative;
+
+    .email__animation {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      color: $color-white;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: max-content;
+      font-size: 2.5rem;
+      border-right: 0.15em solid $color-quaternary; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: 0.15em; /* Adjust as needed */
+
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+      animation-play-state: paused;
+    }
+
+    .phone__animation {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      max-width: max-content;
+      color: $color-white;
+      font-size: 2.5rem;
+      border-right: 0.15em solid $color-quaternary; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: 0.15em; /* Adjust as needed */
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+      animation-play-state: paused;
+    }
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: $color-quaternary;
+    }
+  }
+
+  @keyframes remove-typing {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+
+  @keyframes remove-caret {
+    from,
+    to {
+      border-color: $color-quaternary;
+    }
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item {
+    padding-top: 2rem;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    &:not(:last-child):hover {
+      background-image: linear-gradient($text-gradient);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+
+  .footer__item--icon {
+    a {
+      text-decoration: none;
+      color: $color-white;
+
+      .github-icon {
+        font-size: 3rem;
+        transition: all ease-in-out 0.5s;
+
+        &:hover {
+          color: $color-tertiary;
+        }
+      }
+    }
+  }
+}

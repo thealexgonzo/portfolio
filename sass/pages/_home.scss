@@ -1,0 +1,13 @@
+.section-about {
+  background-color: $color-light-gray-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
+.section-projects {
+  padding: 25rem 0 30rem 0;
+  background-image: linear-gradient($background-gradient), url(../img/pro_2.jpg);
+  background-size: cover;
+  clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -20rem;
+}
