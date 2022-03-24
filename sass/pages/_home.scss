@@ -2,6 +2,13 @@
   background-color: $color-light-gray-1;
   padding: 25rem 0;
   margin-top: -20vh;
+
+  @include respond(tab-port) {
+    padding-top: 22rem;
+  }
+  @include respond(phone) {
+    padding-top: 25rem;
+  }
 }
 
 .section-projects {
@@ -10,4 +17,14 @@
   background-size: cover;
   clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 100%);
   margin-top: -20rem;
+
+  @include respond(tab-port) {
+    padding: 15rem 0 15rem 0;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  }
+  @include respond(phone) {
+    padding: 15rem 0 15rem 0;
+    margin-top: -15rem;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  }
 }

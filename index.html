@@ -15,6 +15,45 @@
   </head>
 
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button"
+        ><span class="navigation__icon">&nbsp;</span></label
+      >
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              href="#about-me"
+              class="navigation__link"
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              ><span>01</span> About Me</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#section-projects"
+              class="navigation__link"
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              ><span>02</span> Projects</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#footer"
+              onclick="document.querySelector('.navigation__checkbox').checked=false"
+              class="navigation__link"
+              ><span>03</span> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__text-box">
         <h1 class="heading-primary">
@@ -29,7 +68,7 @@
     </header>
 
     <main class="main">
-      <section class="section-about">
+      <section class="section-about" id="about-me">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">About me</h2>
         </div>
@@ -56,7 +95,11 @@
             <ion-icon name="logo-sass" class="icon sass-icon"></ion-icon>
             <ion-icon name="logo-javascript" class="icon js-icon"></ion-icon>
             <ion-icon name="logo-react" class="icon react-icon"></ion-icon>
-            <ion-icon name="logo-nodejs" class="icon nodejs-icon"></ion-icon>
+            <ion-icon
+              class="icon git-icon"
+              name="git-branch-outline"
+            ></ion-icon>
+            <!-- <ion-icon name="logo-nodejs" class="icon nodejs-icon"></ion-icon> -->
           </div>
 
           <div class="col-1-of-2">
@@ -100,20 +143,26 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">Get in touch</h2>
       </div>
-      <div class="typewriter">
+      <!-- <div class="typewriter">
         <h1 class="email__animation">alexgonzorod@hotmail.com</h1>
         <h1 class="phone__animation">07775906145</h1>
-      </div>
+      </div> -->
 
       <div class="footer-contact">
         <ul class="footer__list">
-          <li class="footer__item email">Email</li>
-          <li class="footer__item phone">Phone</li>
-          <li class="footer__item">Download CV</li>
+          <li class="footer__item email">alexgonzorod@hotmail.com</li>
+          <li class="footer__item phone">+44 777 5906 145</li>
+          <li class="footer__item cv">
+            <a
+              href="https://drive.google.com/file/d/1UR74ndRqbV3FxxtsKqPNCcHyBJLMEj2h/view?usp=sharing"
+              target="bank"
+              >Download CV</a
+            >
+          </li>
           <li class="footer__item footer__item--icon">
             <a href="https://github.com/thealexgonzo" target="_blank"
               ><ion-icon name="logo-github" class="github-icon"></ion-icon
@@ -161,6 +210,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>

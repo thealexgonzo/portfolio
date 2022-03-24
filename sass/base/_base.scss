@@ -8,9 +8,29 @@
 
 html {
   // This defines what 1rem is
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem - 10px
+
+  // The order is as below because if there is conflicting CSS rules then both of the media query declarations will apply however the one that is last will be the only one applied due to the cascading effect of CSS
+  // If you are starting with a mobile first design then it would be the other way around, smallest value at the top
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 50%
+  }
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+  @include respond(big-desktop) {
+    // width > 1800?
+    font-size: 75%; // 1rem = 12, 12/16 = 75%
+  }
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
