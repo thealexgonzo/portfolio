@@ -160,9 +160,11 @@ body {
 .u-set-img-width {
   width: 100%; }
 
-.icon {
-  font-size: 6.4rem;
-  margin-right: 2rem; }
+.icons {
+  display: flex;
+  justify-content: space-between; }
+  .icons .icon {
+    font-size: 6.4rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
