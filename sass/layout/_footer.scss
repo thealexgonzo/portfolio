@@ -102,12 +102,15 @@
   &__item {
     padding-top: 2rem;
     transition: all ease-in-out 0.5s;
-    // cursor: pointer;
 
     a {
       text-decoration: none;
       color: $color-white;
       transition: all ease-in-out 0.5s;
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
     }
 
     &:not(:last-child):hover,
@@ -130,7 +133,7 @@
     }
   }
 
-  .footer__item--icon {
+  &__item--icon {
     a {
       text-decoration: none;
       color: $color-white;
@@ -141,6 +144,10 @@
 
         &:hover {
           color: $color-tertiary;
+        }
+
+        @include respond(tab-port) {
+          font-size: 4rem;
         }
       }
     }

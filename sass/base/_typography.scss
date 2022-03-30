@@ -72,6 +72,10 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: $color-dark-gray;
+
+  @include respond(tab-port) {
+    font-size: 1.8rem;
+  }
 }
 
 .paragraph {
@@ -80,6 +84,10 @@ body {
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 1.8rem;
   }
 }
 /* ---------------------------------- 

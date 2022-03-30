@@ -129,12 +129,18 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #757575; }
+  @media (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 1.8rem; } }
 
 .paragraph {
   font-size: 1.6rem;
   color: #757575; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+  @media (max-width: 56.25em) {
+    .paragraph {
+      font-size: 1.8rem; } }
 
 /* ---------------------------------- 
   Applying gradient to text
@@ -331,6 +337,9 @@ body {
       text-decoration: none;
       color: #fff;
       transition: all ease-in-out 0.5s; }
+      @media (max-width: 56.25em) {
+        .footer__item a {
+          font-size: 2rem; } }
     .footer__item:not(:last-child):hover,
     .footer__item a:hover {
       background-image: linear-gradient(to bottom left, #644dff, #465ce8, #579aff, #46b1e8, #4df3ff);
@@ -340,14 +349,17 @@ body {
     @media (max-width: 37.5em) {
       .footer__item:first-child {
         padding-top: 0; } }
-  .footer .footer__item--icon a {
+  .footer__item--icon a {
     text-decoration: none;
     color: #fff; }
-    .footer .footer__item--icon a .github-icon {
+    .footer__item--icon a .github-icon {
       font-size: 3rem;
       transition: all ease-in-out 0.5s; }
-      .footer .footer__item--icon a .github-icon:hover {
+      .footer__item--icon a .github-icon:hover {
         color: #579aff; }
+      @media (max-width: 56.25em) {
+        .footer__item--icon a .github-icon {
+          font-size: 4rem; } }
 
 .navigation__checkbox {
   display: none; }
